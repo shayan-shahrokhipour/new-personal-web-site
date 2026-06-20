@@ -7,3 +7,25 @@
 body{
     direction: rtl;
 }
+
+.navbar{
+    position: relative;
+    z-index: 200;
+}
+
+.hero{
+    position: absolute;
+    top: 0;
+}
+
+.menuList{
+    display: flex;
+}
+
+.menuList li{
+    list-style: none;
+}
+
+.menuList li a{
+    text-decoration: none;
+}
