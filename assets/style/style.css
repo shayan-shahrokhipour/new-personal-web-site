@@ -14,8 +14,21 @@ body{
 }
 
 .hero{
+    width: 100%;
+    height: 100vh;
     position: absolute;
     top: 0;
+    
+
+}
+
+.hero img{
+    width: 90%;
+    height: 80vh;
+    display: block;
+   margin: 5px auto;
+   object-fit: cover;
+   border-radius: 5px;
 }
 
 .menuList{
