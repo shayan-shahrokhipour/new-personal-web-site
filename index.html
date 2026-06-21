@@ -4,25 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="./assets/style/style.css">
+     <link rel="stylesheet" href="./assets/fontawesome-free-7.2.0-web/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <ul class="menuList">
+         <div class="hamburger">
+            <div class="icon firstbar"></div>
+            <div class="icon secondbar"></div>
+            <div class="icon thirdbar"></div>
+         </div>
+
+           <div class="responsive">
+             <ul class="menuList">
                 <li><a href="">صفحه اصلی</a></li>
                 <li><a href="">تجربه کاری</a></li>
                 <li><a href="">مهارت ها</a></li>
                 <li><a href="">پورتفولیو</a></li>
                 <li><a href="">ارتباط با ما</a></li>
             </ul>
+           </div>
         </nav>
         <div class="hero">
-            <img src="./assets/images/Hero.png" alt="">
+            <img src="./assets/images/Herogray.png" alt="">
         </div>
     </header>
     <main class="container">
        
     </main>
+    <div class="overlay"></div>
 </body>
+<script>
+    const hamburgerButton = document.querySelector(".hamburger");
+    const responsive = document.querySelector(".responsive");
+    const overlay = document.querySelector(".overlay");
+    const icon = document.querySelectorAll(".icon");
+      hamburgerButton.addEventListener("click",()=>{
+        responsive.classList.toggle("active");
+        overlay.classList.toggle("overlayactive");
+         hamburgerButton.classList.toggle("change")
+      })
+    
+</script>
 </html>
