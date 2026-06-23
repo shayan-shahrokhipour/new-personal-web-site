@@ -11,8 +11,16 @@ body{
 }
 
 header{
-    width: 100%;
-    height: auto;
+    background: url(../images/Herogray.png) ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 90%;
+min-height: 90vh;
+margin: 5px auto;
+border-radius: 5px;
+
 }
 
 @font-face {
@@ -20,29 +28,71 @@ header{
     src: url(../iranyekan/Qs_Iranyekan.ttf);
 }
 
+
 .navbar{
     position: relative;
     width: 100%;
+    height: 100%;
     z-index: 203;
+}
+
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+
+
+
+
+.heroHolder{ 
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    gap: 10px;
+    
+}
+
+.resumeButton{
+    width: 12%;
+    height: 35px;
+    background-color: transparent;
+    border-radius: 5px;
+    font-family: iranYekan;
+cursor: pointer;
+  background: transparent;
+  border: 1px solid #ff1744;;
+  
+}
+
+
+
+
+
+.hireMe{
+     width: 12%;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-family: iranYekan;
+    border: none;
+    cursor: pointer;
 }
 
 .hero{
     width: 100%;
     height: 100vh;
-    position: absolute;
-    top: 0;
     
-
 }
 
-.hero img{
-    width: 90%;
-    height: 80vh;
-    display: block;
-   margin: 5px auto;
-   object-fit: cover;
-   border-radius: 5px;
-}
+
 
 .hamburger{
     display: none;
@@ -74,6 +124,8 @@ header{
     display: flex;
 }
 
+
+
 .menuList li{
     max-width: 100%;
     margin-right: 8%;
@@ -84,13 +136,10 @@ header{
      width: 500px;
   height: 200px;
   border: 10px solid rgba(255, 255, 255, 0.2);
-  margin: 150px auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  z-index: 199;
-  position: relative;
 }
 
 .infoarea h2  {
@@ -98,7 +147,6 @@ header{
 }
 
 .infoarea h1{
-    position: relative;
 
       color: rgba(255, 255, 255, 0.9);
 
@@ -109,14 +157,28 @@ header{
 }
 
 .menuList li a{
+    position: relative;
     text-decoration: none;
     font-size: 12px;
     color: #fff;
-    transition: border-bottom ease 200ms;
+    transition: border-bottom ease 2000ms;
 }
 
-.menuList li a:hover{
-    border-bottom: 1px solid #f0dcdc;
+.menuList li a::after{
+    content: "";
+     position: absolute;
+     bottom: -3px;
+     right: 0;
+     width: 0;
+     height: 2px;
+         background: #f0dcdc;
+    transition: 300ms ease;
+
+
+}
+
+.menuList li a:hover::after{
+width: 100%;
 }
 
 .overlay{
@@ -132,8 +194,133 @@ transition: opacity ease-in 200ms;
 
 }
 
+.afterHero{
+    width: 90%;
+    height: 600px;
+    background-color: rgba(255, 23, 68, 0.04);
+    margin: 0 auto;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+     position: relative;
+      border-radius: 5px;
+}
+
+.rect{
+    width: 600px;
+    height: 300px;
+    padding: 15px;
+    background-color:  #ff6f00; 
+    opacity: 0; 
+    transition:transform ease-in 200ms, opacity ease-in 200ms; 
+}
+
+.rect.showElement{
+    opacity: 1;
+}
+
+.rect p{
+    padding-top: 10px;
+    color: #fff;
+}
+
+.rect a i{
+    margin-top: 25px;
+    font-size: 35px;
+}
+
+
+
+.square{
+    max-width: 100%;
+    width: 300px;
+    height: 300px;
+    background-color:  #ff6f00;
+    position: absolute;
+    right: 55%;
+    top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      box-shadow:  0 25px 60px rgba(0, 0, 0, 0.25),
+        0 10px 20px rgba(255, 111, 0, 0.35);
+}
+
+.square img{
+    max-width: 100%;
+    width: 280px;
+    height: 280px;
+}
+
+.fa-telegram{
+    color: #0088cc;
+    filter: grayscale(100%);
+    transition: filter ease-in 200ms;
+}
+
+.fa-whatsapp{
+    color: #25D366;
+    filter: grayscale(100%);
+        transition: filter ease-in 200ms;
+
+}
+
+.fa-instagram{
+        filter: grayscale(100%);
+        transition: filter ease-in 200ms;
+
+    color:  #E1306C;
+
+}
+
+.fa-telegram:hover,.fa-whatsapp:hover,.fa-instagram:hover{
+    filter: grayscale(0);
+}
+
+.aboutmeText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    transform: translateY(20px);
+     opacity: 0;
+     transition: transform ease-in 200ms , opacity ease-in 100ms;
+}
+
+.aboutmeText p{
+    max-width: 50%;
+    text-align: center;
+    color:  #b0b0b0;
+    font-size: 15px;
+}
+
+.aboutMepart{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        background-color: #25D366;
+
+
+}
+.aboutMeholder{
+    width: 90%;
+    height: 400px;
+    background-color: #0088cc;
+    display: flex;
+}
+
+.aboutmeText.addAnimation{
+    opacity: 1;
+   transform: translateY(0);
+
+}
+
 @media only screen and (max-width:767px){
    .menuList {
+    margin: 0 auto;
    flex-direction: column;
    align-items: center;
    gap: 15px;
@@ -164,5 +351,34 @@ opacity: 0.95;
     margin: 0 auto;
     text-align: center;
    
+}.menuList li{
+    margin-right: 0;
+}.heroHolder{
+    margin-top: 0;
+}.resumeButton , .hireMe{
+    width: 25%;
+}.rect{
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}.square{
+    position: static;
+   margin: 0 auto;
+   width: 90%;
+}.square img{
+    width: 90%;
+}.rect a i{
+    margin-top: 0;
+}.rect p{
+    padding-top: 0;
+    font-size: 15px;
+}.afterHero{
+    margin-top: 0;
+}.aboutmeText p{
+max-width: 90%;
 }
 }
