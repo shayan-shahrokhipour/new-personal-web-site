@@ -44,7 +44,8 @@
     <main class="container">
        <section class="afterHero">
         <div class="rect">
-           <p>نام و نام خانوادگی : شایان شاهرخی پور</p>
+           <div class="rectDetails">
+            <p>نام و نام خانوادگی : شایان شاهرخی پور</p>
            <p>علاقه : توسعه دهنده فرانت اند | ریئکت</p>
            <p>تاریخ تولد : 1373/8/28</p>
            <p>محل سکونت : تهران</p>
@@ -52,6 +53,7 @@
              <a href=""><i class="fa-brands fa-instagram"></i></a>
              <a href="https://wa.me/989192700682"><i class="fa-brands fa-whatsapp"></i></a>
              <a href="https://t.me/shayan-shr"><i class="fa-brands fa-telegram"></i></a>
+           </div>
             <div class="square">
               <img src="./assets/images/webdev.gif" alt="">
             </div>
@@ -61,13 +63,23 @@
         <h3>درباره من</h3>
         <p>من شایان هستم، توسعه‌دهنده فرانت‌اند که به ساخت رابط‌های کاربری ساده، سریع و تمیز علاقه دارم. بیشتر تمرکزم روی HTML، CSS و JavaScript هست و در حال یادگیری و کار با React هستم تا بتونم تجربه‌های کاربری بهتری بسازم.</p>
        </section>
-       <section class="aboutMepart">
-         <section class="aboutMeholder">
-          <p>به طراحی وب فقط به عنوان کد نگاه نمی‌کنم؛ برام مهمه چیزی که ساخته می‌شه هم کاربردی باشه هم حس خوبی به کاربر بده. همیشه سعی می‌کنم توی پروژه‌هام به جزئیات توجه کنم و از چالش‌های جدید فراری نیستم.
+       <section class="aboutMeholder">
+        <div class="aboutMeparts">
+         <div class="aboutMedetails">
+           <p>به طراحی وب فقط به عنوان کد نگاه نمی‌کنم؛ برام مهمه چیزی که ساخته می‌شه هم کاربردی باشه هم حس خوبی به کاربر بده. همیشه سعی می‌کنم توی پروژه‌هام به جزئیات توجه کنم و از چالش‌های جدید فراری نیستم.
 
-          در حال حاضر روی بهبود مهارت‌هام در توسعه فرانت‌اند و ساخت پروژه‌های واقعی تمرکز دارم تا بتونم وارد سطح حرفه‌ای‌تر بشم و پروژه‌هایی با کیفیت بالاتر ارائه بدم.</p>
-          <img src="./assets/images/webdev.gif" alt="">
-         </section>
+        در حال حاضر روی بهبود مهارت‌هام در توسعه فرانت‌اند و ساخت پروژه‌های واقعی تمرکز دارم تا بتونم وارد سطح حرفه‌ای‌تر بشم و پروژه‌هایی با کیفیت بالاتر ارائه بدم.</p>
+             <h4>لینک گیتهاب من</h4>
+             <a href=""><i class="fa-brands fa-github"></i></a>
+         </div>
+           
+          
+           <div class="aboutMeimg">
+             <img src="./assets/images/webdev.gif" alt="">
+           </div>
+        
+        </div>
+        
        </section>
 
     </main>
@@ -76,8 +88,8 @@
 <script>
   const available=[
     {el:document.querySelector(".rect"),className:"showElement"},
-  {el:document.querySelector(".aboutmeText"),className:"addAnimation"
-}
+  {el:document.querySelector(".aboutmeText"),className:"addAnimation"},
+  {el:document.querySelector(".aboutMeholder"),className:"addAnimation"}
 ]
     const hamburgerButton = document.querySelector(".hamburger");
     const responsive = document.querySelector(".responsive");
