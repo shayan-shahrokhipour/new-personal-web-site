@@ -62,6 +62,7 @@
        <section class="aboutmeText">
         <h3>درباره من</h3>
         <p>من شایان هستم، توسعه‌دهنده فرانت‌اند که به ساخت رابط‌های کاربری ساده، سریع و تمیز علاقه دارم. بیشتر تمرکزم روی HTML، CSS و JavaScript هست و در حال یادگیری و کار با React هستم تا بتونم تجربه‌های کاربری بهتری بسازم.</p>
+
        </section>
        <section class="aboutMeholder">
         <div class="aboutMeparts">
@@ -74,8 +75,15 @@
          </div>
            
           
-           <div class="aboutMeimg">
-             <img src="./assets/images/webdev.gif" alt="">
+           <div class="imgHolder">
+            <div class="aboutMeimg">
+             <img class="sliderImg showImg" src="./assets/images/slider/html.jpg" alt="">
+             <img class="sliderImg"  src="./assets/images/slider/css.jpg" alt="">
+             <img class="sliderImg"  src="./assets/images/slider/javascript.jpg" alt="">
+           </div>
+            <p class="dot firstDot">&#9632;</p>
+            <p class="dot secondDot">&#9632;</p>
+            <p class="dot thirdDot">&#9632;</p>
            </div>
         
         </div>
@@ -86,6 +94,60 @@
     <div class="overlay"></div>
 </body>
 <script>
+      let index =0;
+
+  const dotSlider=document.querySelectorAll(".dot");
+  const firstDot =document.querySelector(".firstDot");
+  const secondDot =document.querySelector(".secondDot");
+  const thirdDot = document.querySelector(".thirdDot");
+  console.log(firstDot);
+   
+    const tryslider=dotSlider[index]
+    console.log(tryslider);
+    
+    
+  
+  const img = document.querySelectorAll(".sliderImg")
+  console.log(img);
+  
+ 
+
+firstDot.addEventListener("click",()=>{
+    img[index].classList.add("showImg")
+     img[index + 1].classList.remove("showImg")
+     img[index + 2].classList.remove("showImg")
+     console.log(img[index]);
+     
+   console.log(index);
+   
+
+})
+  
+secondDot.addEventListener("click",()=>{
+   img[index + 1].classList.add("showImg")
+   img[index].classList.remove("showImg")
+   img[index + 2].classList.remove("showImg")
+   console.log(img[index + 1]);
+   
+   console.log(index + 1);
+   
+
+})
+
+thirdDot.addEventListener("click",()=>{
+   img[index + 1].classList.remove("showImg")
+   img[index].classList.remove("showImg")
+   img[index + 2].classList.add("showImg")     
+
+  console.log(img[index + 2]);
+
+   console.log(index + 2);
+   
+
+})
+
+
+
   const available=[
     {el:document.querySelector(".rect"),className:"showElement"},
   {el:document.querySelector(".aboutmeText"),className:"addAnimation"},
@@ -96,7 +158,6 @@
     const overlay = document.querySelector(".overlay");
     const icon = document.querySelectorAll(".icon");
     const heightOfViewport=window.innerHeight*0.8
-    console.log(heightOfViewport);
     
       hamburgerButton.addEventListener("click",()=>{
         responsive.classList.toggle("active");
@@ -110,7 +171,6 @@
 
          if(boundingClient<heightOfViewport){
           item.el.classList.add(item.className)
-          console.log("this element is shown");
           
         }
        })
