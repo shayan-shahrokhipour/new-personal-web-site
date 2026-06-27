@@ -414,6 +414,91 @@ transition: opacity ease-in 200ms;
     opacity: 1;
 }
 
+.dotActive{
+    color: #fe724b;
+}
+
+.myEducation{
+    width: 95%;
+    height: 600px;
+    background-color: #fcfbfc;
+    margin: 100px auto;
+}
+
+.educationDetails{
+    width: 100%;
+    height: 100px;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+     transition: transform ease-in 200ms , opacity ease-in 100ms;
+
+}
+.educationDetails.addAnimation{
+     opacity: 1;
+   transform: translateY(0); 
+}
+
+.educationDetails p{
+        color:  #b0b0b0;
+            font-size: 15px;
+
+
+}
+
+.educationHistory{
+width: 100%;
+height: 200px;
+display: flex;
+justify-content: space-around;
+margin-top: 50px;
+}
+
+.samestyleeducation{
+  width: 20%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+      border: 1px solid #f8f8f8;
+     
+}
+
+.firstEducation,.secondEducation,.thirdEducation{
+    width: 90%;
+    height: 180px;
+    background-color: #fdfbfc;
+          padding: 25px;
+
+      
+}
+
+
+
+.sameCssH3{
+    color: #a9a9a9;
+    font-size: 15px;
+}
+
+.sameCssparagraph{
+     max-width: 100%;
+    font-size: 14px;
+    margin-top: 10px;
+    color: #dbdbd9;
+}
+
+.dateOfstart{
+        color: #afadad;
+
+}
+
+
+
 @media only screen and (max-width:767px){
    .menuList {
     margin: 0 auto;
@@ -462,6 +547,7 @@ opacity: 0.95;
     flex-direction: column;
     text-align: center;
     padding: 10px;
+    margin-top: 0;
 }.square{
     position: static;
    margin: 0 auto;
@@ -488,6 +574,12 @@ max-width: 90%;
 }.aboutMedetails p{
     text-align: center;
 
+}.aboutmeText{
+    margin-top: 50px;
+}.aboutMedetails{
+    margin-top: 50px;
+}.aboutMeholder{
+    margin-top: 0;
 }
 }
 

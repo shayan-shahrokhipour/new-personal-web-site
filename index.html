@@ -80,42 +80,83 @@
              <img class="sliderImg showImg" src="./assets/images/slider/html.jpg" alt="">
              <img class="sliderImg"  src="./assets/images/slider/css.jpg" alt="">
              <img class="sliderImg"  src="./assets/images/slider/javascript.jpg" alt="">
+             <img class="sliderImg" src="./assets/images/slider/react.jpg" alt="">
            </div>
-            <p class="dot firstDot">&#9632;</p>
+            <p class="dot firstDot dotActive">&#9632;</p>
             <p class="dot secondDot">&#9632;</p>
             <p class="dot thirdDot">&#9632;</p>
+            <p class="dot fourthDot">&#9632;</p>
            </div>
         
         </div>
         
        </section>
-
+         <section class="myEducation">
+          <div class="educationDetails">
+             <h3 class="">تحصیلات من</h3>
+              <p>در این بخش، بخشی از مسیر تحصیلی و روند یادگیری من را مشاهده می‌کنید.</p>
+          </div>
+           <div class="educationHistory">
+             <div class="samestyleeducation firstLittleCards">
+              <div class="firstEducation">
+               <h3 class="sameCssH3">دانشگاه</h3>
+               <span class="dateOfstart">1392-1398</span>
+               <p class="sameCssparagraph">تحصیلات دانشگاهی مهندسی مکانیک از سال 92 تا 98 در دانشگاه ازاد</p>
+             </div>
+             </div>
+             <div class="samestyleeducation secondLittleCards">
+              <div class="secondEducation">
+                <h3 class="sameCssH3">دوره های برنامه نویسی</h3>
+                <span class="dateOfstart">1398</span>
+                <p class="sameCssparagraph">یادگیری و آموزش برنامه نویسی سایت در موسسه کندو</p>
+              </div>
+             </div>
+             <div class="samestyleeducation thirdLittleCards">
+                <div class="thirdEducation">
+                <h3 class="sameCssH3">هنوز در حال ایدگیری</h3>
+                <span class="dateOfstart">1398-1405</span>
+                <p class="sameCssparagraph">تکولوژی همیشه در حال تغییره و ما همیشه باید آپدیت بمانیم</p>
+              </div>
+             </div>
+           </div>
+                </section>
     </main>
     <div class="overlay"></div>
 </body>
 <script>
+
+
       let index =0;
 
   const dotSlider=document.querySelectorAll(".dot");
   const firstDot =document.querySelector(".firstDot");
   const secondDot =document.querySelector(".secondDot");
   const thirdDot = document.querySelector(".thirdDot");
-  console.log(firstDot);
-   
-    const tryslider=dotSlider[index]
-    console.log(tryslider);
-    
-    
+  const fourthDot = document.querySelector(".fourthDot");
   
   const img = document.querySelectorAll(".sliderImg")
   console.log(img);
   
+ dotSlider.forEach(item=>{
+    item.addEventListener("click",()=>{
+    dotSlider.forEach(dot=>{
+       dot.classList.remove("dotActive")
+    })
+        item.classList.add("dotActive")
+
+    })
+ })
+
  
 
 firstDot.addEventListener("click",()=>{
-    img[index].classList.add("showImg")
+     img[index].classList.add("showImg")
      img[index + 1].classList.remove("showImg")
      img[index + 2].classList.remove("showImg")
+     img[index + 3].classList.remove("showImg")
+     
+    //  firstDot.style.color="#fe724b"
+
      console.log(img[index]);
      
    console.log(index);
@@ -127,6 +168,8 @@ secondDot.addEventListener("click",()=>{
    img[index + 1].classList.add("showImg")
    img[index].classList.remove("showImg")
    img[index + 2].classList.remove("showImg")
+         img[index + 3].classList.remove("showImg")
+        
    console.log(img[index + 1]);
    
    console.log(index + 1);
@@ -138,6 +181,7 @@ thirdDot.addEventListener("click",()=>{
    img[index + 1].classList.remove("showImg")
    img[index].classList.remove("showImg")
    img[index + 2].classList.add("showImg")     
+      img[index + 3].classList.remove("showImg")
 
   console.log(img[index + 2]);
 
@@ -146,12 +190,22 @@ thirdDot.addEventListener("click",()=>{
 
 })
 
+fourthDot.addEventListener("click",()=>{
+  img[index].classList.remove("showImg");
+  img[index + 1].classList.remove("showImg")
+  img[index + 2].classList.remove("showImg")     
+  img[index + 3].classList.add("showImg")
+
+
+})
+
 
 
   const available=[
-    {el:document.querySelector(".rect"),className:"showElement"},
+  {el:document.querySelector(".rect"),className:"showElement"},
   {el:document.querySelector(".aboutmeText"),className:"addAnimation"},
-  {el:document.querySelector(".aboutMeholder"),className:"addAnimation"}
+  {el:document.querySelector(".aboutMeholder"),className:"addAnimation"},
+  {el:document.querySelector(".educationDetails"),className:"addAnimation"}
 ]
     const hamburgerButton = document.querySelector(".hamburger");
     const responsive = document.querySelector(".responsive");
