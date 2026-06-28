@@ -93,7 +93,7 @@
        </section>
          <section class="myEducation">
           <div class="educationDetails">
-             <h3 class="">تحصیلات من</h3>
+             <h3>تحصیلات من</h3>
               <p>در این بخش، بخشی از مسیر تحصیلی و روند یادگیری من را مشاهده می‌کنید.</p>
           </div>
            <div class="educationHistory">
@@ -115,11 +115,73 @@
                 <div class="thirdEducation">
                 <h3 class="sameCssH3">هنوز در حال ایدگیری</h3>
                 <span class="dateOfstart">1398-1405</span>
-                <p class="sameCssparagraph">تکولوژی همیشه در حال تغییره و ما همیشه باید آپدیت بمانیم</p>
+                <p class="sameCssparagraph">تکنولوژی همیشه در حال تغییره و ما همیشه باید آپدیت بمانیم</p>
               </div>
              </div>
            </div>
-                </section>
+       </section>
+       <section class="myjob">
+          <div class="jobDetails">
+             <h3>تجربه شغلی من</h3>
+             <p>در این بخش مقداری از فعالیت های من رو در زمینه طراحی وب خواهید دید</p>
+          </div>
+           <div class="jobHistory">
+            <div class="samestylejob">
+              <div class="jobDescription">
+                 <h3 class="sameCssH3">اپ هواشناسی</h3>
+               <span class="dateOfstart">1400-1405</span>
+               <p class="sameCssparagraph">  اجرای یک اپ هواشناسی با جاوا اسکریپت خالص</p>
+             </div>
+              </div>
+              <div class="samestylejob">
+              <div class="jobDescription">
+                <h3 class="sameCssH3">باز نویسی سایت گرین</h3>
+                <span class="dateOfstart">1400</span>
+                <p class="sameCssparagraph"> باز نویسی سایت گرین با استفاده از تکنولوژی های پایه و بوت استرپ به صورت جدا</p>
+              </div>
+             </div>
+              <div class="samestylejob">
+              <div class="jobDescription">
+                <h3 class="sameCssH3">طراحی و اجرای پروژه </h3>
+                <span class="dateOfstart">1405</span>
+                <p class="sameCssparagraph"> اجرای یک سایت کاتالوگ برای فروشگاه مهرگان پخش</p>
+              </div>
+             </div>
+            </div>
+           </div>
+       </section>
+       <section class="mySkills">
+          <div class="skillDetails">
+             <h3>توانایی های من</h3>
+             <p>تکنولوژی های قابل ارائه توسط من</p>
+          </div>
+          <div class="percentHolder">
+            <div class="ImgDimension">
+              <img class="Img" src="./assets/images/80percent.jpg" alt="">
+              <div class="percentOverlay">
+                <p>HTML</p>
+              </div>
+            </div>
+            <div class="ImgDimension">
+            <img class="Img" src="./assets/images/75percent.jpg" alt="">
+               <div class="percentOverlay">
+                <p>CSS</p>
+              </div>
+            </div>
+            <div class="ImgDimension">
+              <img class="Img" src="./assets/images/70percent.jpg" alt="">
+               <div class="percentOverlay">
+                <p>javascript</p>
+              </div>
+            </div>
+            <div class="ImgDimension">
+              <img class="Img" src="./assets/images/70percent.jpg" alt="">
+               <div class="percentOverlay">
+                <p>React</p>
+              </div>
+            </div>
+          </div>
+       </section>
     </main>
     <div class="overlay"></div>
 </body>
@@ -133,7 +195,6 @@
   const secondDot =document.querySelector(".secondDot");
   const thirdDot = document.querySelector(".thirdDot");
   const fourthDot = document.querySelector(".fourthDot");
-  
   const img = document.querySelectorAll(".sliderImg")
   console.log(img);
   
@@ -155,7 +216,6 @@ firstDot.addEventListener("click",()=>{
      img[index + 2].classList.remove("showImg")
      img[index + 3].classList.remove("showImg")
      
-    //  firstDot.style.color="#fe724b"
 
      console.log(img[index]);
      
@@ -205,7 +265,10 @@ fourthDot.addEventListener("click",()=>{
   {el:document.querySelector(".rect"),className:"showElement"},
   {el:document.querySelector(".aboutmeText"),className:"addAnimation"},
   {el:document.querySelector(".aboutMeholder"),className:"addAnimation"},
-  {el:document.querySelector(".educationDetails"),className:"addAnimation"}
+  {el:document.querySelector(".educationDetails"),className:"addAnimation"},
+  {el:document.querySelector(".educationHistory"),className:'addAnimation'},
+  {el:document.querySelector(".jobDetails"),className:'addAnimation'},
+  {el:document.querySelector(".jobHistory"),className:"addAnimation"}
 ]
     const hamburgerButton = document.querySelector(".hamburger");
     const responsive = document.querySelector(".responsive");
