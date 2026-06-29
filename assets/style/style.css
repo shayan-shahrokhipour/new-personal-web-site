@@ -4,11 +4,14 @@
     box-sizing: border-box;
 }
 
+
 body{
     direction: rtl;
         font-family: iranYekan;
-
+   max-width: 1400px;
+   margin: 0 auto;
 }
+
 
 header{
     background: url(../images/Herogray.png) ;
@@ -419,7 +422,7 @@ transition: opacity ease-in 200ms;
 }
 
 .myEducation{
-    width: 95%;
+    width: 90%;
     height: 400px;
     background-color: #fcfbfc;
     margin: 100px auto;
@@ -576,8 +579,8 @@ transition: transform ease-in 200ms,opacity ease-in 200ms;
 }
 
 .mySkills{
-    width: 95%;
-    height: 500px;
+    width: 90%;
+    height: 400px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -587,6 +590,16 @@ transition: transform ease-in 200ms,opacity ease-in 200ms;
 }
 
 
+.skillDetails{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity ease-in 200ms , transform ease-in 200ms;
+}
+
+.skillDetails.addAnimation{
+    opacity: 1;
+    transform: translateY(0);
+}
 
 .skillDetails p{
      color:  #b0b0b0;
@@ -595,14 +608,21 @@ transition: transform ease-in 200ms,opacity ease-in 200ms;
 
 .percentHolder{
     max-width: 75%;
-     max-height: 50%;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-around;
     gap: 5px;
     margin:50px auto;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity ease-in 200ms,transform ease-in 200ms;
 
+}
+
+.percentHolder.addAnimation{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .ImgDimension{
@@ -653,6 +673,257 @@ transition: transform ease-in 200ms,opacity ease-in 200ms;
     top: 0;
 }
 
+.myServices{
+    width: 95%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.samestyleBox{
+    width: 23%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+}
+
+.servicesDetails{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity ease-in 200ms,transform ease-in 200ms;
+}
+
+.servicesDetails.addAnimation{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.servicesDetails p{
+    font-size: 15px;
+    color: #b0b0b0;
+
+}
+
+.boxHolder{
+     max-width: 75%;
+     width: 100%;
+     height: 100%;
+     margin-top: 50px;
+     display: flex;
+     justify-content: space-around;
+     opacity: 0;
+     transform: translateY(20px);
+     transition: opacity ease-in 200ms,transform ease-in 200ms;
+}
+
+.boxHolder.addAnimation{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.uiuxDesign{
+   
+    background-color: #65b3f3;
+    
+
+
+}
+
+.samestyleBox .boxDescription{
+    font-weight: 100;
+    font-size: 10px;
+}
+
+.samestyleBox p{
+    color: #e8feff;
+    font-size: 15px;
+}
+
+.samestyleBox i{
+    color: #eef9fe;
+    font-size: 30px;
+}
+
+.bugDevelop{
+  
+    background-color: #bf4af8;
+   
+}
+
+
+
+.appDesign{
+    background-color: #7471ff;
+    
+}
+
+
+.photoShot{
+    background-color: #f84670;
+}
+
+
+
+.lastrectDetails{
+    width: 100%;
+}
+
+.lastrectDetails p{
+    max-width: 50%;
+    font-size: 15px;
+}
+
+.rectAnimation{
+    opacity: 0;
+    
+}
+
+.rectAnimation.addAnimation{
+    opacity: 1;
+}
+
+footer{
+    width: 100%;
+    height:300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3c3e4b;
+        margin: 100px auto 0;
+      
+
+}
+
+.popularLinks{
+    max-width: 25%;
+    height: auto;
+    color: #c6c9d1;
+        margin-top: 30px;
+
+     
+}
+
+.popularLinks ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+
+
+.popularLinks ul li{
+    display: flex;
+
+    gap: 5px;
+    border-bottom: 1px dotted #fff;
+}
+
+.popularLinks ul li a{
+    color: #747781;
+text-decoration: none;
+}
+.popularLinks li img{
+    width: 25%;
+    height: 25%;
+}
+
+.nameofUser{
+ display: flex;
+ gap: 5px;
+}
+
+.nameofUser p{
+    font-size: 10px;
+}
+
+.footerdetails a{
+    font-size: 12px;
+}
+
+.topView{
+    max-width: 25%;
+    height: auto;
+    margin-top: 30px;
+        color: #c6c9d1;
+
+}
+
+.linkParts{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.topView ul li a{
+    color: #c6c9d1;
+    text-decoration: none;
+
+}
+
+.topView ul{
+    margin-top: 20px;
+        gap: 50px;
+
+}
+
+.topView ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.topView ul li p{
+    font-size: 12px;
+    text-align: center;
+}
+
+.contact{
+    width: 25%;
+    height: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+     gap: 30px;
+}
+
+.contact h4{
+    color: #c6c9d1;;
+}
+.contact button{
+   margin-top: 30px;
+   width: 75%;
+   height: 10%;
+   background-color: transparent;
+   border: 2px solid #73595f;
+   color: #c6c9d1;
+   border-radius: 2px;
+    font-family: iranYekan;
+}
+
+.contact p span{
+    color: #7a5a5e;
+    font-size: 12px;
+}
+
+.contact p{
+        color: #c6c9d1;
+        font-size: 12px;
+       
+
+}
+
 @media only screen and (max-width:767px){
    .menuList {
     margin: 0 auto;
@@ -701,7 +972,7 @@ opacity: 0.95;
     flex-direction: column;
     text-align: center;
     padding: 10px;
-    margin-top: 0;
+    margin-top: 100px;
 }.square{
     position: static;
    margin: 0 auto;
@@ -716,7 +987,7 @@ opacity: 0.95;
     padding-top: 0;
     font-size: 14px;
 }.afterHero{
-    margin-top: 0;
+    margin-top: 100px;
 }.aboutmeText p{
 max-width: 90%;
 }.aboutMeparts{
@@ -769,6 +1040,50 @@ max-width: 90%;
     height: auto;
 }.jobDetails p{
     text-align: center;
+}.percentHolder{
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+}.mySkills{
+    height: auto;
+}.boxHolder{
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}.myServices{
+    height: auto;
+}.samestyleBox{
+    width: 90%;
+    min-height: 200px;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}.lastrectDetails p{
+margin: 0 auto;
+}.ImgDimension{
+    width: 90%;
+}.afterHero{
+    height: auto;
+}footer{
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}.popularLinks{
+    max-width: 95%;
+}.topView{
+    max-width: 95%;
+}.linkParts{
+    width: 100%;
+}.contact{
+    width: 90%;
+}.contact {
+align-items: center;
+ justify-content: center;
 }
 }
 
@@ -802,5 +1117,12 @@ max-width: 90%;
         height: 330px;
     }.jobDescription{
         height: auto;
+    }.popularLinks ul{
+        gap: 0;
+    }.popularLinks li img{
+        width: 15%;
+        height: 15%;
+    }.contact{
+        gap: 5px;
     }
 }
