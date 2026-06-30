@@ -924,6 +924,21 @@ text-decoration: none;
 
 }
 
+.lastOffooter{
+    width: 100%;
+    height: 50px;
+    background-color: #383b45;
+    display: flex;
+    align-items: center;
+}
+
+.lastOffooter p{
+    text-align: center;
+    color: #90939b;
+    font-size: 12px;
+    padding-right: 75px;
+}
+
 @media only screen and (max-width:767px){
    .menuList {
     margin: 0 auto;
