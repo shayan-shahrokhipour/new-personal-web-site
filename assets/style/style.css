@@ -1,142 +1,123 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-body{
-    direction: rtl;
-        font-family: iranYekan;
-   max-width: 1400px;
-   margin: 0 auto;
+body {
+  direction: rtl;
+  font-family: iranYekan;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-
-header{
-    background: url(../images/Herogray.png) ;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    width: 90%;
-min-height: 90vh;
-margin: 5px auto;
-border-radius: 5px;
-
+header {
+  background: url(../images/Herogray.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 90%;
+  min-height: 90vh;
+  margin: 5px auto;
+  border-radius: 5px;
 }
 
 @font-face {
-    font-family: iranYekan;
-    src: url(../iranyekan/Qs_Iranyekan.ttf);
+  font-family: iranYekan;
+  src: url(../iranyekan/Qs_Iranyekan.ttf);
 }
 
-
-.navbar{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 203;
+.navbar {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 203;
 }
 
-.btn{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-
-
-
-
-.heroHolder{ 
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 200px;
-    gap: 10px;
-    
+.heroHolder {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  gap: 10px;
 }
 
-.resumeButton{
-    width: 12%;
-    height: 35px;
-    background-color: transparent;
-    border-radius: 5px;
-    font-family: iranYekan;
-cursor: pointer;
+.resumeButton {
+  width: 12%;
+  height: 35px;
+  background-color: transparent;
+  border-radius: 5px;
+  font-family: iranYekan;
+  cursor: pointer;
   background: transparent;
-  border: 1px solid #ff1744;;
-  
+  border: 1px solid #ff1744;
 }
 
-
-
-
-
-.hireMe{
-     width: 12%;
-    height: 35px;
-    background-color: #fff;
-    border-radius: 5px;
-    font-family: iranYekan;
-    border: none;
-    cursor: pointer;
+.hireMe {
+  width: 12%;
+  height: 35px;
+  background-color: #fff;
+  border-radius: 5px;
+  font-family: iranYekan;
+  border: none;
+  cursor: pointer;
 }
 
-.hero{
-    width: 100%;
-    height: 100vh;
-    
+.hero {
+  width: 100%;
+  height: 100vh;
 }
 
-
-
-.hamburger{
-    display: none;
+.hamburger {
+  display: none;
 }
 
-.firstbar ,.secondbar,.thirdbar{
-    width: 35px;
-    height: 5px;
-    background-color: #fff;
-     margin: 6px 0;
+.icon {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
   transition: 0.4s;
 }
 
-.hamburger.change .firstbar{
-    transform: translate(0 ,11px) rotate(45deg);
+.hamburger.change .firstbar {
+  transform: translate(0, 11px) rotate(45deg);
 }
 
-.hamburger.change .secondbar{
-    opacity: 0;
+.hamburger.change .secondbar {
+  opacity: 0;
 }
 
-.hamburger.change .thirdbar{
-    transform: translate(0,-11px) rotate(-45deg);
+.hamburger.change .thirdbar {
+  transform: translate(0, -11px) rotate(-45deg);
 }
 
-.menuList{
-        max-width: 85%;
-        margin-right: 10%;
-    display: flex;
+.menuList {
+  max-width: 85%;
+  margin-right: 10%;
+  display: flex;
 }
 
-
-
-.menuList li{
-    max-width: 100%;
-    margin-right: 8%;
-    list-style: none;
+.menuList li {
+  max-width: 100%;
+  margin-right: 8%;
+  margin-top: 3%;
+  list-style: none;
 }
 
-.infoarea{
-     width: 500px;
+.infoarea {
+  width: 500px;
   height: 200px;
   border: 10px solid rgba(255, 255, 255, 0.2);
   display: flex;
@@ -145,840 +126,721 @@ cursor: pointer;
   align-items: center;
 }
 
-.infoarea h2  {
-    color: #fff;
+.infoarea h2 {
+  color: #fff;
 }
 
-.infoarea h1{
-
-      color: rgba(255, 255, 255, 0.9);
-
+.infoarea h1 {
+  color: rgba(255, 255, 255, 0.9);
 }
 
-.infoarea span{
-      color: rgba(255, 255, 255, 0.7);
+.infoarea span {
+  color: rgba(255, 255, 255, 0.7);
 }
 
-.menuList li a{
-    position: relative;
-    text-decoration: none;
-    font-size: 12px;
-    color: #fff;
-    transition: border-bottom ease 2000ms;
+.menuList li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 12px;
+  color: #fff;
+  transition: border-bottom ease 2000ms;
 }
 
-.menuList li a::after{
-    content: "";
-     position: absolute;
-     bottom: -3px;
-     right: 0;
-     width: 0;
-     height: 2px;
-         background: #f0dcdc;
-    transition: 300ms ease;
-
-
+.menuList li a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background: #f0dcdc;
+  transition: 300ms ease;
 }
 
-.menuList li a:hover::after{
-width: 100%;
+.menuList li a:hover::after {
+  width: 100%;
 }
 
-.overlay{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-background-color: rgb(20, 20, 25);
-opacity: 0;
-transition: opacity ease-in 200ms;
-    pointer-events: none;
-    z-index: 200;
-
+.overlay {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(20, 20, 25);
+  opacity: 0;
+  transition: opacity ease-in 200ms;
+  pointer-events: none;
+  z-index: 200;
 }
 
-.afterHero{
-    width: 90%;
-    height: 600px;
-    background-color: #fcfbfc;
-    margin: 0 auto;
-     display: flex;
-    align-items: center;
-    justify-content: center;
-     position: relative;
-      border-radius: 5px;
+.afterHero {
+  width: 90%;
+  height: 600px;
+  background-color: #fcfbfc;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 5px;
 }
 
-.rect{
-    margin-top: 100px;
-    max-width: 100%;
-    width: 750px;
-    height: 400px;
-    padding: 55px;
-    background-color:  #fe724b; 
-    opacity: 0; 
-    transition:transform ease-in 200ms, opacity ease-in 200ms; 
+.rect {
+  margin-top: 100px;
+  max-width: 100%;
+  width: 750px;
+  height: 400px;
+  padding: 55px;
+  background-color: #fe724b;
 }
 
-.rect.showElement{
-    opacity: 1;
+.rect p {
+  padding-top: 10px;
+  color: #f8b2ac;
+  font-size: 20px;
 }
 
-.rect p{
-    padding-top: 10px;
-    color: #f8b2ac;
-    font-size: 20px;
+.rect a i {
+  margin-top: 25px;
+  font-size: 35px;
 }
 
-.rect a i{
-    margin-top: 25px;
-    font-size: 35px;
+.square {
+  max-width: 100%;
+  max-height: 100%;
+  width: 400px;
+  height: 400px;
+  background-color: #fe724b;
+  position: absolute;
+  right: 52%;
+  top: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.25),
+    0 10px 20px rgba(255, 111, 0, 0.35);
 }
 
-
-
-.square{
-    max-width: 100%;
-    max-height: 100%;
-    width: 400px;
-    height: 400px;
-    background-color:  #fe724b;
-    position: absolute;
-    right: 52%;
-    top: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-      box-shadow:  0 25px 60px rgba(0, 0, 0, 0.25),
-        0 10px 20px rgba(255, 111, 0, 0.35);
+.square img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 370px;
+  height: 370px;
 }
 
-.square img{
-    max-width: 100%;
-    max-height: 100%;
-    width: 370px;
-    height: 370px;
+.fa-telegram {
+  color: #0088cc;
+  filter: grayscale(100%);
+  transition: filter ease-in 200ms;
 }
 
-.fa-telegram{
-    color: #0088cc;
-    filter: grayscale(100%);
-    transition: filter ease-in 200ms;
+.fa-whatsapp {
+  color: #25d366;
+  filter: grayscale(100%);
+  transition: filter ease-in 200ms;
 }
 
-.fa-whatsapp{
-    color: #25D366;
-    filter: grayscale(100%);
-        transition: filter ease-in 200ms;
+.fa-instagram {
+  filter: grayscale(100%);
+  transition: filter ease-in 200ms;
 
+  color: #e1306c;
 }
 
-.fa-instagram{
-        filter: grayscale(100%);
-        transition: filter ease-in 200ms;
-
-    color:  #E1306C;
-
-}
-
-.fa-telegram:hover,.fa-whatsapp:hover,.fa-instagram:hover{
-    filter: grayscale(0);
-}
-
-.aboutmeText {
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
-    transform: translateY(20px);
-     opacity: 0;
-     transition: transform ease-in 200ms , opacity ease-in 100ms;
-}
-
-.aboutmeText p{
-    max-width: 50%;
-    text-align: center;
-    color:  #b0b0b0;
-    font-size: 15px;
-}
-
-.aboutmeText.addAnimation{
-    opacity: 1;
-   transform: translateY(0);
-
-}
-
-.aboutMeholder{
-    width: 100%;
-   min-height: 450px;
-   height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translateY(20px);
-     opacity: 0;
-     transition: transform ease-in 200ms , opacity ease-in 100ms;
-     margin-top: 100px;
-}
-
-.aboutMeholder.addAnimation{
-    opacity: 1;
-   transform: translateY(0); 
-}
-
-.aboutMeparts{
-    width: 90%;
-    min-height: 400px;
-    height: auto;
-    display: flex;
-}
-
-.imgHolder{
-    width: 100%;
-    height: 100%;
-        text-align: center;
-
-}
-
-.imgHolder p{
-    display: inline;
-
-}
-
-.dot{
-    cursor: pointer;
-}
-
-.aboutMedetails{
-    width: 100%;
-    height: auto;
-}
-.aboutMeimg{
-    width: 90%;
-    height: 400px;
-    background-color: #fff;
-    box-shadow: 1px 1px 10px #000;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.aboutMeimg img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 25px auto;
-    width: 90%;
-    height:  350px;
-    border: 1px solid #b0b0b0;
-}
-
-
-
-.aboutMedetails p ,.aboutMedetails h4{
-    padding: 25px;
-}
-
-.aboutMedetails   .fa-github {
-    font-size: 45px;
-    color: rgb(67, 67, 153);
- filter: grayscale(100%);
- transition: filter ease-in 200ms;
-}
-   
-
-.aboutMedetails  .fa-github:hover 
-{
+.fa-telegram:hover,
+.fa-whatsapp:hover,
+.fa-instagram:hover {
   filter: grayscale(0);
 }
 
-
-.aboutMedetails i{
-    padding-right: 25px;
+.aboutmeText {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  transform: translateY(20px);
 }
 
-.aboutMedetails p{
-     color:  #b0b0b0;
-    font-size: 15px;
+.aboutmeText p {
+  max-width: 50%;
+  text-align: center;
+  color: #b0b0b0;
+  font-size: 15px;
 }
 
-.sliderImg{
-    opacity: 0;
-   
-    transition: opacity ease-in 500ms;
+.aboutMeholder {
+  width: 100%;
+  min-height: 450px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(20px);
+  margin-top: 100px;
 }
 
-.sliderImg.showImg{
-    opacity: 1;
+.aboutMeparts {
+  width: 90%;
+  min-height: 400px;
+  height: auto;
+  display: flex;
 }
 
-.dotActive{
-    color: #fe724b;
+.imgHolder {
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 
-.myEducation{
-    width: 90%;
-    height: 400px;
-    background-color: #fcfbfc;
-    margin: 100px auto;
+.imgHolder p {
+  display: inline;
 }
 
-.educationDetails{
-    width: 100%;
-    height: 100px;
-     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(20px);
-     transition: transform ease-in 200ms , opacity ease-in 100ms;
-
-}
-.educationDetails.addAnimation{
-     opacity: 1;
-   transform: translateY(0); 
+.dot {
+  cursor: pointer;
 }
 
-.educationDetails p{
-        color:  #b0b0b0;
-            font-size: 15px;
-
-
+.aboutMedetails {
+  width: 100%;
+  height: auto;
+}
+.aboutMeimg {
+  width: 90%;
+  height: 400px;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px #000;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-.educationHistory{
-width: 100%;
-height: 200px;
-display: flex;
-justify-content: space-around;
-margin-top: 50px;
-opacity: 0;
-transform: translateY(20px);
-transition: transform ease-in 200ms,opacity ease-in 200ms;
+.aboutMeimg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 25px auto;
+  width: 90%;
+  height: 350px;
+  border: 1px solid #b0b0b0;
 }
 
-.educationHistory.addAnimation{
- opacity: 1;
- transform: translateY(0);
+.aboutMedetails p,
+.aboutMedetails h4 {
+  padding: 25px;
 }
 
-.samestyleeducation{
+.aboutMedetails .fa-github {
+  font-size: 45px;
+  color: rgb(67, 67, 153);
+  filter: grayscale(100%);
+  transition: filter ease-in 200ms;
+}
+
+.aboutMedetails .fa-github:hover {
+  filter: grayscale(0);
+}
+
+.aboutMedetails i {
+  padding-right: 25px;
+}
+
+.aboutMedetails p {
+  color: #b0b0b0;
+  font-size: 15px;
+}
+
+.sliderImg {
+  opacity: 0;
+
+  transition: opacity ease-in 500ms;
+}
+
+.sliderImg.showImg {
+  opacity: 1;
+}
+
+.dotActive {
+  color: #fe724b;
+}
+
+.myEducation {
+  width: 90%;
+  height: 400px;
+  background-color: #fcfbfc;
+  margin: 100px auto;
+}
+
+.educationDetails {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.educationDetails p {
+  color: #b0b0b0;
+  font-size: 15px;
+}
+
+.educationHistory {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.samestyleeducation {
   width: 20%;
   height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #fff;
-      border: 1px solid #f8f8f8;
-     
+  border: 1px solid #f8f8f8;
 }
 
-.firstEducation,.secondEducation,.thirdEducation{
-    width: 90%;
-    height: 180px;
-    background-color: #fdfbfc;
-          padding: 25px;
-
-      
+.boxEducations {
+  width: 90%;
+  height: 180px;
+  background-color: #fdfbfc;
+  padding: 25px;
 }
 
-
-
-.sameCssH3{
-    color: #a9a9a9;
-    font-size: 15px;
-    transition: all  500ms;
+.sameCssH3 {
+  color: #a9a9a9;
+  font-size: 15px;
+  transition: all 500ms;
 }
 
-.sameCssH3:hover{
-   color: #fe724b; 
+.sameCssH3:hover {
+  color: #fe724b;
 }
 
-.sameCssparagraph{
-     max-width: 100%;
-    font-size: 14px;
-    margin-top: 10px;
-    color: #dbdbd9;
+.sameCssparagraph {
+  max-width: 100%;
+  font-size: 14px;
+  margin-top: 10px;
+  color: #dbdbd9;
 }
 
-.dateOfstart{
-        color: #afadad;
-
+.dateOfstart {
+  color: #afadad;
 }
 
-.myjob{
-    width: 95%;
-    height: 400px;
-    margin: 100px auto;
+.myjob {
+  width: 95%;
+  height: 400px;
+  margin: 100px auto;
 }
 
-.jobDetails{
-    width: 100%;
-    height: 100px;
-     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(20px);
-     transition: transform ease-in 200ms , opacity ease-in 100ms;
-
+.jobDetails {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
-.jobDetails.addAnimation{
-    opacity: 1;
-    transform: translateY(0);
+.jobDetails p {
+  color: #b0b0b0;
+  font-size: 15px;
 }
 
-.jobDetails p{
-     color:  #b0b0b0;
-            font-size: 15px;
+.jobHistory {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
 }
 
-.jobHistory{
-    width: 100%;
-height: 200px;
-display: flex;
-justify-content: space-around;
-margin-top: 50px;
-  opacity: 0;
-          transform: translateY(20px);
-transition: transform ease-in 200ms,opacity ease-in 200ms;
-}
-
-.samestylejob{
-     width: 20%;
+.samestylejob {
+  width: 20%;
   height: 220px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #fff;
-      border: 1px solid #f8f8f8;
+  border: 1px solid #f8f8f8;
 }
 
-.jobDescription{
-     width: 90%;
-    height: 200px;
-    background-color: #fdfbfc;
-          padding: 25px;
-        
-
+.jobDescription {
+  width: 90%;
+  height: 200px;
+  background-color: #fdfbfc;
+  padding: 25px;
 }
 
-.jobHistory.addAnimation{
-    opacity: 1;
-    transform: translateY(0);
+.mySkills {
+  width: 90%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: #fcfbfc;
+  margin: 0 auto;
 }
 
-.mySkills{
-    width: 90%;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-     background-color: #fcfbfc;
-     margin: 0 auto;
+.skillDetails p {
+  color: #b0b0b0;
+  font-size: 15px;
 }
 
-
-.skillDetails{
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity ease-in 200ms , transform ease-in 200ms;
+.percentHolder {
+  max-width: 75%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+  margin: 50px auto;
 }
 
-.skillDetails.addAnimation{
-    opacity: 1;
-    transform: translateY(0);
+.ImgDimension {
+  width: 23%;
+  height: 150px;
+  background-color: #fff;
+  border: 1px solid #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  object-fit: cover;
+  position: relative;
+  overflow: hidden;
 }
 
-.skillDetails p{
-     color:  #b0b0b0;
-     font-size: 15px;
+.ImgDimension img {
+  width: 85%;
+  height: 100px;
 }
 
-.percentHolder{
-    max-width: 75%;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    gap: 5px;
-    margin:50px auto;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity ease-in 200ms,transform ease-in 200ms;
-
+.percentOverlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff714b;
+  transform: translateY(100%);
+  transition: transform 250ms ease;
+  transition: all 200ms;
 }
 
-.percentHolder.addAnimation{
-    opacity: 1;
-    transform: translateY(0);
+.percentOverlay p {
+  font-size: 25px;
+  color: #ffff;
 }
 
-.ImgDimension{
-    width: 23%;
-    height: 150px;
-     background-color: #fff;
-      border: 1px solid #f8f8f8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.ImgDimension:hover .percentOverlay {
+  transform: translateY(45%);
+}
+
+.ImgDimension:hover .Img {
+  position: absolute;
+  top: 0;
+}
+
+.myServices {
+  width: 95%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.samestyleBox {
+  width: 23%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.servicesDetails {
+  margin-top: 100px;
+}
+
+.servicesDetails p {
+  font-size: 15px;
+  color: #b0b0b0;
+}
+
+.boxHolder {
+  max-width: 75%;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.uiuxDesign {
+  background-color: #65b3f3;
+}
+
+.samestyleBox .boxDescription {
+  font-weight: 100;
+  font-size: 10px;
+}
+
+.samestyleBox p {
+  color: #e8feff;
+  font-size: 15px;
+}
+
+.samestyleBox i {
+  color: #eef9fe;
+  font-size: 30px;
+}
+
+.bugDevelop {
+  background-color: #bf4af8;
+}
+
+.appDesign {
+  background-color: #7471ff;
+}
+
+.photoShot {
+  background-color: #f84670;
+}
+
+.lastrectDetails {
+  width: 100%;
+}
+
+.lastrectDetails p {
+  max-width: 50%;
+  font-size: 15px;
+}
+
+.rectAnimation {
+  opacity: 0;
+}
+
+.rectAnimation.addAnimation {
+  opacity: 1;
+}
+
+footer {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3c3e4b;
+  margin: 100px auto 0;
+}
+
+.popularLinks {
+  max-width: 25%;
+  height: auto;
+  color: #c6c9d1;
+  margin-top: 30px;
+}
+
+.popularLinks ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.popularLinks ul li {
+  display: flex;
+
+  gap: 5px;
+  border-bottom: 1px dotted #fff;
+}
+
+.popularLinks ul li a {
+  color: #747781;
+  text-decoration: none;
+}
+.popularLinks li img {
+  width: 25%;
+  height: 25%;
+}
+
+.nameofUser {
+  display: flex;
+  gap: 5px;
+}
+
+.nameofUser p {
+  font-size: 10px;
+}
+
+.footerdetails a {
+  font-size: 12px;
+}
+
+.topView {
+  max-width: 25%;
+  height: auto;
+  margin-top: 30px;
+  color: #c6c9d1;
+}
+
+.linkParts {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.topView ul li a {
+  color: #c6c9d1;
+  text-decoration: none;
+}
+
+.topView ul {
+  margin-top: 20px;
+  gap: 50px;
+}
+
+.topView ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.topView ul li p {
+  font-size: 12px;
+  text-align: center;
+}
+
+.contact {
+  width: 25%;
+  height: auto;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact h4 {
+  color: #c6c9d1;
+}
+.contact button {
+  margin-top: 30px;
+  width: 75%;
+  height: 10%;
+  background-color: transparent;
+  border: 2px solid #73595f;
+  color: #c6c9d1;
+  border-radius: 2px;
+  font-family: iranYekan;
+}
+
+.contact p span {
+  color: #7a5a5e;
+  font-size: 12px;
+}
+
+.contact p {
+  color: #c6c9d1;
+  font-size: 12px;
+}
+
+.lastOffooter {
+  width: 100%;
+  height: 50px;
+  background-color: #383b45;
+  display: flex;
+  align-items: center;
+}
+
+.lastOffooter p {
+  text-align: center;
+  color: #90939b;
+  font-size: 12px;
+  padding-right: 75px;
+}
+
+/*animation css*/
+.forAnimation {
+  opacity: 0;
+  transition:
+    transform ease-in 200ms,
+    opacity ease-in 200ms;
+}
+
+.forAnimation.addAnimation {
+  opacity: 1;
+}
+/*animation end*/
+
+@media only screen and (max-width: 767px) {
+  .menuList {
     margin: 0 auto;
-        object-fit: cover;
-        position: relative;
-            overflow: hidden;
-
-
-}
-
-.ImgDimension img{ 
-    width: 85%;
-    height: 100px;
-
-}
-
-.percentOverlay{
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #ff714b;
-    transform: translateY(100%);
-    transition: transform 250ms ease;
-    transition: all 200ms;
-}
-
-.percentOverlay p{
-    font-size: 25px;
-    color: #ffff;
-
-}
-
-.ImgDimension:hover .percentOverlay{
- transform: translateY(45%);     
-}
-
-.ImgDimension:hover .Img{
-    position: absolute;
-    top: 0;
-}
-
-.myServices{
-    width: 95%;
-    height: 400px;
-    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.samestyleBox{
-    width: 23%;
-    height: 75%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; 
-}
-
-.servicesDetails{
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity ease-in 200ms,transform ease-in 200ms;
-}
-
-.servicesDetails.addAnimation{
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.servicesDetails p{
-    font-size: 15px;
-    color: #b0b0b0;
-
-}
-
-.boxHolder{
-     max-width: 75%;
-     width: 100%;
-     height: 100%;
-     margin-top: 50px;
-     display: flex;
-     justify-content: space-around;
-     opacity: 0;
-     transform: translateY(20px);
-     transition: opacity ease-in 200ms,transform ease-in 200ms;
-}
-
-.boxHolder.addAnimation{
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.uiuxDesign{
-   
-    background-color: #65b3f3;
-    
-
-
-}
-
-.samestyleBox .boxDescription{
-    font-weight: 100;
-    font-size: 10px;
-}
-
-.samestyleBox p{
-    color: #e8feff;
-    font-size: 15px;
-}
-
-.samestyleBox i{
-    color: #eef9fe;
-    font-size: 30px;
-}
-
-.bugDevelop{
-  
-    background-color: #bf4af8;
-   
-}
-
-
-
-.appDesign{
-    background-color: #7471ff;
-    
-}
-
-
-.photoShot{
-    background-color: #f84670;
-}
-
-
-
-.lastrectDetails{
-    width: 100%;
-}
-
-.lastrectDetails p{
-    max-width: 50%;
-    font-size: 15px;
-}
-
-.rectAnimation{
-    opacity: 0;
-    
-}
-
-.rectAnimation.addAnimation{
-    opacity: 1;
-}
-
-footer{
-    width: 100%;
-    height:300px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #3c3e4b;
-        margin: 100px auto 0;
-      
-
-}
-
-.popularLinks{
-    max-width: 25%;
-    height: auto;
-    color: #c6c9d1;
-        margin-top: 30px;
-
-     
-}
-
-.popularLinks ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    gap: 50px;
-    margin-top: 20px;
-}
-
-
-
-.popularLinks ul li{
-    display: flex;
-
-    gap: 5px;
-    border-bottom: 1px dotted #fff;
-}
-
-.popularLinks ul li a{
-    color: #747781;
-text-decoration: none;
-}
-.popularLinks li img{
-    width: 25%;
-    height: 25%;
-}
-
-.nameofUser{
- display: flex;
- gap: 5px;
-}
-
-.nameofUser p{
-    font-size: 10px;
-}
-
-.footerdetails a{
-    font-size: 12px;
-}
-
-.topView{
-    max-width: 25%;
-    height: auto;
-    margin-top: 30px;
-        color: #c6c9d1;
-
-}
-
-.linkParts{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    gap: 10px;
-}
-
-.topView ul li a{
-    color: #c6c9d1;
-    text-decoration: none;
-
-}
-
-.topView ul{
-    margin-top: 20px;
-        gap: 50px;
-
-}
-
-.topView ul li{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.topView ul li p{
-    font-size: 12px;
-    text-align: center;
-}
-
-.contact{
-    width: 25%;
-    height: auto;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-     gap: 30px;
-}
-
-.contact h4{
-    color: #c6c9d1;;
-}
-.contact button{
-   margin-top: 30px;
-   width: 75%;
-   height: 10%;
-   background-color: transparent;
-   border: 2px solid #73595f;
-   color: #c6c9d1;
-   border-radius: 2px;
-    font-family: iranYekan;
-}
-
-.contact p span{
-    color: #7a5a5e;
-    font-size: 12px;
-}
-
-.contact p{
-        color: #c6c9d1;
-        font-size: 12px;
-       
-
-}
-
-.lastOffooter{
-    width: 100%;
-    height: 50px;
-    background-color: #383b45;
-    display: flex;
-    align-items: center;
-}
-
-.lastOffooter p{
-    text-align: center;
-    color: #90939b;
-    font-size: 12px;
-    padding-right: 75px;
-}
-
-@media only screen and (max-width:767px){
-   .menuList {
-    margin: 0 auto;
-   flex-direction: column;
-   align-items: center;
-   gap: 15px;
-} .hamburger{
+    gap: 15px;
+  }
+  .hamburger {
     position: absolute;
     top: 10%;
     right: 10%;
     display: block;
-        z-index: 204;
-
-}.responsive{
-   
+    z-index: 204;
+  }
+  .responsive {
     width: 100%;
     height: 250px;
-  background-color:  rgba(25, 25, 30, 0.95);   
-   transform: translateY(-120%);
+    background-color: rgba(25, 25, 30, 0.95);
+    transform: translateY(-120%);
     transition: transform ease-in 200ms;
-}.responsive.active{
+  }
+  .responsive.active {
     transform: translateY(35%);
-
-}.overlay.overlayactive{
+  }
+  .overlay.overlayactive {
     pointer-events: all;
 
-opacity: 0.95;
-}.infoarea{
+    opacity: 0.95;
+  }
+  .infoarea {
     width: 80%;
     height: auto;
     margin: 0 auto;
     text-align: center;
-   
-}.menuList li{
+  }
+  .menuList li {
     margin-right: 0;
-}.heroHolder{
     margin-top: 0;
-}.resumeButton , .hireMe{
+  }
+  .heroHolder {
+    margin-top: 0;
+  }
+  .resumeButton,
+  .hireMe {
     width: 25%;
-}.rect{
+  }
+  .rect {
     width: 90%;
     height: auto;
     display: flex;
@@ -988,156 +850,205 @@ opacity: 0.95;
     text-align: center;
     padding: 10px;
     margin-top: 100px;
-}.square{
+  }
+  .square {
     position: static;
-   margin: 0 auto;
-   width: 90%;
-   height: 230px;
-}.square img{
+    margin: 0 auto;
+    width: 90%;
+    height: 230px;
+  }
+  .square img {
     width: 90%;
     height: 200px;
-}.rect a i{
+  }
+  .rect a i {
     margin-top: 0;
-}.rect p{
+  }
+  .rect p {
     padding-top: 0;
     font-size: 14px;
-}.afterHero{
+  }
+  .afterHero {
     margin-top: 100px;
-}.aboutmeText p{
-max-width: 90%;
-}.aboutMeparts{
+  }
+  .aboutmeText p {
+    max-width: 90%;
+  }
+  .aboutMeparts {
     width: 90%;
     height: auto;
     flex-direction: column;
-}.aboutMeholder{
+  }
+  .aboutMeholder {
     height: auto;
-}.aboutMedetails p{
+  }
+  .aboutMedetails p {
     text-align: center;
-
-}.aboutmeText{
+  }
+  .aboutmeText {
     margin-top: 50px;
-}.aboutMedetails{
+  }
+  .aboutMedetails {
     margin-top: 50px;
-}.aboutMeholder{
+  }
+  .aboutMeholder {
     margin-top: 0;
-}.educationHistory{
+  }
+  .educationHistory {
     flex-direction: column;
     align-items: center;
-     margin: 0 auto;
+    margin: 0 auto;
     width: 90%;
     height: auto;
     gap: 10px;
-}.myEducation{
+  }
+  .myEducation {
     width: 90%;
     height: auto;
-}.samestyleeducation{
+  }
+  .samestyleeducation {
     width: 90%;
     height: 200px;
-}.firstEducation,.secondEducation,.thirdEducation{
+  }
+  .firstEducation,
+  .secondEducation,
+  .thirdEducation {
     width: 85%;
     height: auto;
-
-}.jobHistory{
-     flex-direction: column;
+  }
+  .jobHistory {
+    flex-direction: column;
     align-items: center;
-     margin: 0 auto;
+    margin: 0 auto;
     width: 90%;
     height: auto;
     gap: 10px;
-}.myjob{
-     width: 90%;
+  }
+  .myjob {
+    width: 90%;
     height: auto;
-}.samestylejob{
-     width: 90%;
+  }
+  .samestylejob {
+    width: 90%;
     height: 200px;
-}.jobDescription{
+  }
+  .jobDescription {
     width: 85%;
     height: auto;
-}.jobDetails p{
+  }
+  .jobDetails p {
     text-align: center;
-}.percentHolder{
+  }
+  .percentHolder {
     max-width: 100%;
     height: auto;
     flex-direction: column;
-}.mySkills{
+  }
+  .mySkills {
     height: auto;
-}.boxHolder{
+  }
+  .boxHolder {
     max-width: 100%;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-}.myServices{
+  }
+  .myServices {
     height: auto;
-}.samestyleBox{
+  }
+  .samestyleBox {
     width: 90%;
     min-height: 200px;
     height: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}.lastrectDetails p{
-margin: 0 auto;
-}.ImgDimension{
+  }
+  .lastrectDetails p {
+    margin: 0 auto;
+  }
+  .ImgDimension {
     width: 90%;
-}.afterHero{
+  }
+  .afterHero {
     height: auto;
-}footer{
+  }
+  footer {
     height: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-   
-}.popularLinks{
+  }
+  .popularLinks {
     max-width: 95%;
-}.topView{
+  }
+  .topView {
     max-width: 95%;
-}.linkParts{
+  }
+  .linkParts {
     width: 100%;
-}.contact{
+  }
+  .contact {
     width: 90%;
-}.contact {
-align-items: center;
- justify-content: center;
-}
+  }
+  .contact {
+    align-items: center;
+    justify-content: center;
+  }
 }
 
-@media only screen and (min-width:768px) and (max-width:1024px) {
-    .rect{
-        width: 90%;
-        height: auto;
-        display: flex;
-        padding: 15px;
-    }.square{
-        position: static;
-        width: 90%;
-        margin: 0 auto;
-    }.afterHero{
-        height: auto;
-        width: 90%;
-    }.rect p{
-                font-size: 15px;
-    }.aboutMeholder{
-        width: 100%;
-        height: auto;
-    }.myEducation{
-        height: 500px;
-    }.samestyleeducation{
-        height: 280px;
-    }.firstEducation,.secondEducation,.thirdEducation{
-        height: auto;
-    }.myjob{
-       height: 500px;  
-    }.samestylejob{
-        height: 330px;
-    }.jobDescription{
-        height: auto;
-    }.popularLinks ul{
-        gap: 0;
-    }.popularLinks li img{
-        width: 15%;
-        height: 15%;
-    }.contact{
-        gap: 5px;
-    }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .rect {
+    width: 90%;
+    height: auto;
+    display: flex;
+    padding: 15px;
+  }
+  .square {
+    position: static;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .afterHero {
+    height: auto;
+    width: 90%;
+  }
+  .rect p {
+    font-size: 15px;
+  }
+  .aboutMeholder {
+    width: 100%;
+    height: auto;
+  }
+  .myEducation {
+    height: 500px;
+  }
+  .samestyleeducation {
+    height: 280px;
+  }
+  .firstEducation,
+  .secondEducation,
+  .thirdEducation {
+    height: auto;
+  }
+  .myjob {
+    height: 500px;
+  }
+  .samestylejob {
+    height: 330px;
+  }
+  .jobDescription {
+    height: auto;
+  }
+  .popularLinks ul {
+    gap: 0;
+  }
+  .popularLinks li img {
+    width: 15%;
+    height: 15%;
+  }
+  .contact {
+    gap: 5px;
+  }
 }
