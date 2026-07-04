@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header id="topPage">
         <nav class="navbar">
          <div class="hamburger">
             <div class="icon firstbar"></div>
@@ -18,11 +18,10 @@
 
            <div class="responsive">
              <ul class="menuList">
-                <li><a href="">صفحه اصلی</a></li>
-                <li><a href="">تجربه کاری</a></li>
-                <li><a href="">مهارت ها</a></li>
-                <li><a href="">پورتفولیو</a></li>
-                <li><a href="">ارتباط با ما</a></li>
+                <li><a href="#">صفحه اصلی</a></li>
+                <li><a href="#aboutMe" class="aboutme">درباره من</a></li>
+                <li><a href="#skills">مهارت ها</a></li>
+                <li><a href="#services">خدمات من</a></li>
             </ul>
            </div>
         </nav>
@@ -40,13 +39,15 @@
     </header>
     <main class="container">
        <section class="afterHero">
-        <div class="rect forAnimation">
+        <div class="forAnimation">
+          <div class="rect">
            <div class="rectDetails">
             <p>نام و نام خانوادگی : شایان شاهرخی پور</p>
            <p>علاقه : توسعه دهنده فرانت اند | ریئکت</p>
            <p>تاریخ تولد : 1373/8/28</p>
            <p>محل سکونت : تهران</p>
              <p>ادرس سایت : shayan-dev.com</p>
+             <p>09192700682</p>
              <a href=""><i class="fa-brands fa-instagram"></i></a>
              <a href="https://wa.me/989192700682"><i class="fa-brands fa-whatsapp"></i></a>
              <a href="https://t.me/shayan-shr"><i class="fa-brands fa-telegram"></i></a>
@@ -55,8 +56,9 @@
               <img src="./assets/images/webdev.gif" alt="">
             </div>
         </div>
+        </div>
        </section>
-       <section class="aboutmeText forAnimation">
+       <section id="aboutMe" class="aboutmeText forAnimation">
         <h3>درباره من</h3>
         <p>من شایان هستم، توسعه‌دهنده فرانت‌اند که به ساخت رابط‌های کاربری ساده، سریع و تمیز علاقه دارم. بیشتر تمرکزم روی HTML، CSS و JavaScript هست و در حال یادگیری و کار با React هستم تا بتونم تجربه‌های کاربری بهتری بسازم.</p>
 
@@ -68,7 +70,7 @@
 
         در حال حاضر روی بهبود مهارت‌هام در توسعه فرانت‌اند و ساخت پروژه‌های واقعی تمرکز دارم تا بتونم وارد سطح حرفه‌ای‌تر بشم و پروژه‌هایی با کیفیت بالاتر ارائه بدم.</p>
              <h4>لینک گیتهاب من</h4>
-             <a href=""><i class="fa-brands fa-github"></i></a>
+             <a href="https://github.com/shayan-shahrokhipour/"><i class="fa-brands fa-github"></i></a>
          </div>
            
           
@@ -147,7 +149,7 @@
             </div>
            </div>
        </section>
-       <section class="mySkills">
+       <section id="skills" class="mySkills">
           <div class="skillDetails forAnimation">
              <h3>توانایی های من</h3>
              <p>تکنولوژی های قابل ارائه توسط من</p>
@@ -179,7 +181,7 @@
             </div>
           </div>
        </section>
-       <section class="myServices">
+       <section id="services" class="myServices">
         <div class="servicesDetails forAnimation">
           <h3>خدمات من</h3>
           <p>بخشی از خدماتی هست که به صورت حرفه ای داده میشود</p>
@@ -208,7 +210,8 @@
         </div>
        </section>
       <section class="afterHero">
-        <div class="rectAnimation rect forAnimation">
+        <div class="forAnimation">
+          <div class="rect ">
            <div class="lastrectDetails">
            <p> فرانت‌اند دولوپر کسی است که ظاهر و بخش قابل مشاهده وب‌سایت را طراحی و پیاده‌سازی می‌کند. او با HTML ساختار صفحه را می‌سازد، با CSS به آن ظاهر و زیبایی می‌دهد و با JavaScript تعامل و رفتارهای پویا اضافه می‌کند. هدف اصلی او این است که تجربه کاربری ساده، سریع و جذاب برای کاربر ایجاد کند. در واقع هر چیزی که کاربر در مرورگر می‌بیند و با آن تعامل دارد، نتیجه کار فرانت‌اند دولوپر است.
               </p>
@@ -216,6 +219,7 @@
             <div class="square">
               <img src="./assets/images/giphy.gif" alt="">
             </div>
+        </div>
         </div>
        </section>
        <footer>
@@ -250,16 +254,16 @@
           <div class="linkParts">
             <ul>
              <li>
-              <p><a href="">تست </a> <i class="fa-solid fa-angles-right"></i></p>
-              <p><a href="">خدمات </a> <i class="fa-solid fa-angles-right"></i></p>
-              <p><a href="">ارتباط با ما</a><i class="fa-solid fa-angles-right"></i></p>
-              <p><a href="">مهارت ها </a><i class="fa-solid fa-angles-right"></i></p>
+              <p><a href="#">تست </a> <i class="fa-solid fa-angles-right"></i></p>
+              <p><a href="#services">خدمات </a> <i class="fa-solid fa-angles-right"></i></p>
+              <p><a href="#">ارتباط با ما</a><i class="fa-solid fa-angles-right"></i></p>
+              <p><a href="#skills">مهارت ها </a><i class="fa-solid fa-angles-right"></i></p>
              </li>
           </ul>
           <ul>
             <li>
-              <p><a href="">تست </a> <i class="fa-solid fa-angles-right"></i></p>
-              <p><a href="">خدمات </a> <i class="fa-solid fa-angles-right"></i>
+              <p><a href="#">تست </a> <i class="fa-solid fa-angles-right"></i></p>
+              <p><a href="#services">خدمات </a> <i class="fa-solid fa-angles-right"></i>
               <p><a href="">ارتباط با ما</a><i class="fa-solid fa-angles-right"></i></p>
               <p><a href="">مهارت ها </a><i class="fa-solid fa-angles-right"></i></p>
              </li>
@@ -274,8 +278,10 @@
        </footer>
         <div class="lastOffooter">
           <p>&copy 1405 تمام حق و حقوق این سایت متعلق به مالک آن است </p>
-        </div>
-    </main>
+         
+           <a href="#topPage"><i class="fa-solid fa-angles-up"></i></a>
+
+ </main>
     <div class="overlay"></div>
 </body>
 <script src="./assets/js/Homejs.js"></script>

@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 
-:root{
-    --rect-bg-color: #fe724b;
-    --colordescription: #b0b0b0;
-    --colorwhiteofh2orparagraphorbackground:#fff;
+:root {
+  --rect-bg-color: #fe724b;
+  --colordescription: #b0b0b0;
+  --colorwhiteofh2orparagraphorbackground: #fff;
 }
 
 body {
@@ -16,6 +16,13 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
+
+html{
+  scroll-behavior: smooth;
+
+}
+
+
 
 header {
   background: url(../images/Herogray.png);
@@ -200,6 +207,10 @@ header {
   background-color: var(--rect-bg-color);
 }
 
+
+
+
+
 .rect p {
   padding-top: 10px;
   color: #f8b2ac;
@@ -227,6 +238,7 @@ header {
     0 25px 60px rgba(0, 0, 0, 0.25),
     0 10px 20px rgba(255, 111, 0, 0.35);
 }
+
 
 .square img {
   max-width: 100%;
@@ -640,13 +652,7 @@ header {
   font-size: 15px;
 }
 
-.rectAnimation {
-  opacity: 0;
-}
 
-.rectAnimation.addAnimation {
-  opacity: 1;
-}
 
 footer {
   width: 100%;
@@ -776,27 +782,37 @@ footer {
   width: 100%;
   height: 50px;
   background-color: #383b45;
-   display: flex;
-   align-items: center;
-
+  display: flex;
+  align-items: center;
+   justify-content: space-around;
 }
 
 .lastOffooter p {
   color: #90939b;
   font-size: 12px;
-       padding-right: 75px;
-
+  padding-right: 75px;
 }
+
+.lastOffooter i{
+  cursor: pointer;
+  color: #fff;
+}
+
+
 
 /*animation css*/
 .forAnimation {
   opacity: 0;
+  transform: translateY(20px);
   transition:
     transform ease-in 200ms,
     opacity ease-in 200ms;
 }
 
+
+
 .forAnimation.addAnimation {
+  transform: translateY(0);
   opacity: 1;
 }
 /*animation end*/
@@ -1002,11 +1018,12 @@ footer {
   .contact {
     align-items: center;
     justify-content: center;
-  }.lastOffooter p{
+  }
+  .lastOffooter p {
     padding: 0;
-  }.lastOffooter{
-      justify-content: center;
-
+  }
+  .lastOffooter {
+    justify-content: center;
   }
 }
 
