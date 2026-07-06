@@ -1,4 +1,3 @@
-
 const dotSlider = document.querySelectorAll(".dot");
 const img = document.querySelectorAll(".sliderImg");
 console.log(img);
@@ -14,9 +13,7 @@ dotSlider.forEach((item) => {
 
 dotSlider.forEach((dot, idx) => {
   dot.addEventListener("click", () => {
-    console.log(dot);
-    console.log(idx);
-
+    
     img.forEach((item) => {
       item.classList.remove("showImg");
     });
@@ -48,6 +45,7 @@ window.addEventListener("scroll", () => {
 });
 
 
+
 //smooth scroll
 const linkAnchor = document.querySelectorAll("a[href*='#']");
 console.log(linkAnchor);
@@ -60,11 +58,12 @@ const duration = 1000;
 
 linkAnchor.forEach((link, index) => {
   link.addEventListener("click", (e) => {
+     responsive.classList.remove("active");
+  overlay.classList.remove("overlayactive");
+  hamburgerButton.classList.remove("change");
     e.preventDefault();
     const target = link.getAttribute("href");
     const sec = document.querySelector(target);
-    console.log(target, sec);
-    console.log("clicked");
     start = window.pageYOffset;
     viewportstartfromclick =
       sec.getBoundingClientRect().top + window.pageYOffset;
@@ -94,3 +93,7 @@ function animation(currentTime) {
 function easeOutSine(x) {
   return Math.sin((x * Math.PI) / 2);
 }
+
+//end of scroll smooth
+
+
