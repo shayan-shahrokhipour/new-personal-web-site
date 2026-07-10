@@ -7,7 +7,8 @@
 :root {
   --rect-bg-color: #fe724b;
   --colordescription: #b0b0b0;
-  --colorwhiteofh2orparagraphorbackground: #fff;
+  --colorwhiteofh2orparagraphorbackground: #f1f3f5;
+  --description:#000;
 }
 
 body {
@@ -22,7 +23,7 @@ body {
 
 
 header {
-  background: url(../images/Herogray.png);
+  background: url(../images/Herodark.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -115,7 +116,6 @@ header {
 
 .menuList {
   max-width: 85%;
-  margin-right: 10%;
   display: flex;
 }
 
@@ -148,12 +148,20 @@ header {
   color: rgba(255, 255, 255, 0.7);
 }
 
+
+
 .menuList li a {
   position: relative;
   text-decoration: none;
   font-size: 12px;
   color: #fff;
   transition: border-bottom ease 2000ms;
+}
+
+.menuList i{
+  margin-left: 5px;
+  font-size: 15px;
+  text-align: center;
 }
 
 .menuList li a::after {
@@ -165,6 +173,10 @@ header {
   height: 2px;
   background: #f0dcdc;
   transition: 300ms ease;
+}
+
+.menuList li a:hover{
+  color: #f0dcdc;
 }
 
 .menuList li a:hover::after {
@@ -210,7 +222,7 @@ header {
 
 .rect p {
   padding-top: 10px;
-  color: #f8b2ac;
+  color: var(--colorwhiteofh2orparagraphorbackground);
   font-size: 20px;
 }
 
@@ -457,7 +469,7 @@ header {
 .myjob {
   width: 95%;
   height: 400px;
-  margin: 100px auto;
+  margin: 150px auto;
 }
 
 .jobDetails {
@@ -485,21 +497,27 @@ header {
 
 .samestylejob {
   width: 20%;
-  height: 220px;
+  height: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--colorwhiteofh2orparagraphorbackground);
-  border: 1px solid #f8f8f8;
+  border: 1px solid #e5e7eb;
 }
 
 .jobDescription {
   width: 90%;
-  height: 200px;
-  background-color: #fdfbfc;
+  height: auto;
+  background-color:  #ffff;
   padding: 25px;
 }
 
+.jobDescription .jobImg{
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
 .mySkills {
   width: 90%;
   height: 400px;
@@ -960,7 +978,7 @@ footer {
   }
   .samestylejob {
     width: 90%;
-    height: 200px;
+    height: 400px;
   }
   .jobDescription {
     width: 85%;
@@ -1072,7 +1090,7 @@ footer {
     height: 500px;
   }
   .samestylejob {
-    height: 330px;
+    height: 360px;
   }
   .jobDescription {
     height: auto;
